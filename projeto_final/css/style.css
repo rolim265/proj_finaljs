@@ -1,0 +1,119 @@
+/* Estilo para o corpo do documento */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para os itens do acordeão */
+.accordion-button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o corpo do acordeão */
+.accordion-body {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Centraliza o texto */
+.text-center {
+    text-align: center;
+}
+
+/* Estilo para a galeria de imagens */
+#galeria-troca {
+    margin-top: 30px;
+}
+
+/* Torna as imagens responsivas */
+.responsivo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para a div que contém o formulário */
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo para o formulário dentro da div */
+.form-container form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os campos de entrada dentro do formulário */
+.form-container .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-container .form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão dentro do formulário */
+.form-container .btn-success {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.form-container .btn-success:hover {
+    background-color: #218838;
+}
+
+
+/* Estilo para o rodapé */
+.footer {
+    display: block;
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid #555;
+}
+
+.footer:hover {
+    background-color: #23272b;
+}

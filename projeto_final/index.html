@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+   
+    <title>Troca de Imagens</title>
+</head>
+<body>
+    <header><h2>Sobre RegeX</h2></header>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+        <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Para que serve o RegeX?
+            </button>
+        </h3>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <p>
+                Regex é a abreviação do inglês Regular Expressions, traduzido para o português como expressões regulares. Com regex você pode buscar, validar e alterar qualquer padrão de caracteres em qualquer texto.
+
+                Três pontos fortes em expressões regulares são:
+
+                Buscas:
+                Você consegue encontrar determinados padrões dentro de qualquer sequência de caracteres, por exemplo a busca por e-mails dentro de um texto.
+
+                Validações:
+                Você pode fazer a validação dos mais variados padrões, como telefone, e-mail e senha.
+
+                Substituições:
+                Pode substituir, qualquer trecho palavra ou letra dentro de um texto.
+            </p>
+            </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+        <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Quando usar o RegeX?
+            </button>
+        </h3>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <p>
+                Então, em resumo, as regex podem ser aplicadas em situações de:
+                    Mecanismos de validação de dados de formulários;
+                    Encontrar um texto específico em uma string;
+                    Representação de padrões. Por exemplo: os números em um CPF
+            </p>
+            </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTre" aria-expanded="false" aria-controls="collapseTre">
+                    Alguns exemplos práticos RegeX?
+                </button>
+            </h3>
+            <div id="collapseTre" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        <strong>Validação de E-mail:</strong>
+                        Use a expressão regular <code>^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$</code> para validar um endereço de e-mail em C#.
+        
+                        <strong>Extrair Números de uma String:</strong>
+                        Utilize a expressão regular <code>\d+</code> para extrair números de uma string, por exemplo, de "A123B456C789".
+        
+                        <strong>Substituir Palavras em uma String:</strong>
+                        Substitua a palavra "mundo" por "amigo" em uma string, como em "Olá, mundo!", usando a expressão regular <code>\bmundo\b</code>.
+        
+                        Esses exemplos mostram como as expressões regulares podem ser aplicadas de forma prática em C# para realizar validações e manipulações específicas em strings.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQua" aria-expanded="false" aria-controls="collapseQua">
+                    Exemplo 1
+                </button>
+            </h3>
+            <div id="collapseQua" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        <strong>Há duas maneiras de construir uma expressão regular:</strong>
+
+                        Usando uma expressão literal, que consiste em um padrão fechado entre barras, como o exemplo a seguir:
+
+                        <code>const re = /ab+c/;</code>
+
+                        As expressões regulares na forma literal são compiladas quando o script é carregado. Esta forma de construção possui melhor performace quando a expressão regular utilizada é uma constante, ou seja, não muda durante a execução.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQui" aria-expanded="false" aria-controls="collapseQui">
+                    Exemplo 2
+                </button>
+            </h3>
+            <div id="collapseQui" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        <strong>Ou chamando o construtor do objeto:</strong>
+
+                        <code>let re = new RegExp("ab+c");</code>
+
+                        Usando o construtor, a compilação da expressão regular é realizada em tempo de execução. Use o construtor quando souber que o padrão da expressão regular irá mudar ou quando o padrão for desconhecido, oriundo de outra fonte, uma entrada de usuário por exemplo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center">Troca de Imagem</h2>
+        <main class="container d-flex align-items-center justify-content-center">
+            <section id="galeria-troca">
+                <div class="text-center">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto"> 
+                            <img id="main-image" class="responsivo abaixo cor1" src="img/primeiro_personagem.jpg" alt="" style="max-width: 100%;"> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img  class="responsivo bottom-image cor2" src="img/segundo_personagem.jpg" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <img  class="responsivo bottom-image cor3" src="img/terceiro-personagem.png" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <img  class="responsivo bottom-image cor4" src="img/quarto_personagem.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <h2>Formulário</h2>
+    <div class="form-container">
+    <form  onsubmit="return validarFormulario()" action="">
+        
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Data de Nascimento</label>
+            <input type="data" class="form-control" id="dataNascimento">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Telefone</label>
+            <input type="phone" class="form-control" id="telefone">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">CPF</label>
+            <input type="text" class="form-control" id="cpf">
+        </div>
+         <div class="botao">
+             <button type="submit" class="btn btn-success">Mandar</button>
+         </div>
+
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <footer>
+        <a target="_blank" class="footer" href="https://github.com/rolim265">&copy; Copyright <strong>Rolim</strong></a>
+    </footer>    
+</body>
+</html>
